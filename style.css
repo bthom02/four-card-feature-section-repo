@@ -80,7 +80,8 @@ body {
   flex-direction: column;
   gap: 3.2rem;
 }
-.card img:nth-last-of-type(1) {
+
+.img-bottom-right {
   margin: auto 0 15px auto;
 }
 
@@ -119,7 +120,7 @@ body {
 @media (min-width: 768px) {
   body {
     gap: 7.4rem;
-    padding: none;
+    padding: 0;
   }
   .header-container {
     width: 540px;
