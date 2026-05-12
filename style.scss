@@ -1,6 +1,6 @@
 // Variables
     // Color Variables
-    $grey500: #4D4F62;
+    $grey500: #4D4F62; // 7.7:1 contrast to bg-color
     $grey400: #6A7178;
     $white: #FFFFFF;
     $bg-color: #FAFAFA;
@@ -10,13 +10,13 @@
     $orange: #FCAE4A;
     
     // Typography Presets
-    $text-preset-1-mobile: 2.4rem/140% 'Poppins SemiBold';
-    $text-preset-1-desktop: 3.6rem/140% 'Poppins SemiBold';
-    $text-preset-2-mobile: 2.4rem/140% 'Poppins ExtraLight';
-    $text-preset-2-desktop: 3.6rem/140% 'Poppins ExtraLight';
-    $text-preset-3: 2.0rem/135% 'Poppins SemiBold';
-    $text-preset-4: 1.5rem/140% 'Poppins Regular';
-    $text-preset-5: 1.3rem/160% 'Poppins Regular';
+    $text-preset-1-mobile: 2.4rem/140% 'Poppins SemiBold', sans-serif;
+    $text-preset-1-desktop: 3.6rem/140% 'Poppins SemiBold', sans-serif;
+    $text-preset-2-mobile: 2.4rem/140% 'Poppins ExtraLight', sans-serif;
+    $text-preset-2-desktop: 3.6rem/140% 'Poppins ExtraLight', sans-serif;
+    $text-preset-3: 2.0rem/135% 'Poppins SemiBold', sans-serif;
+    $text-preset-4: 1.5rem/140% 'Poppins Regular', sans-serif;
+    $text-preset-5: 1.3rem/160% 'Poppins Regular', sans-serif;
     $text-preset-1-2-spacing: 0.25px;
     $text-preset-4-spacing: 0.1px;
     $text-preset-5-spacing: 0.09px;
@@ -69,7 +69,7 @@ body {
     gap: $gap600;
     background-color: $bg-color;
     color: $grey500;
-    padding: 40px;
+    padding: $gap500;
 }
 
 .header-container {
@@ -109,7 +109,7 @@ body {
 
 .card {
     width: clamp(316px, 85%, 400px);
-    height: 250px;
+    min-height: 250px;
     box-shadow: 0 15px 30px -11px #83A6D280;
     border-radius: 8px;
     padding: $gap400;
@@ -157,6 +157,7 @@ body {
 @media (min-width: 768px) {
     body {
         gap: $gap700;
+        padding: none;
     }
 
     .header-container {

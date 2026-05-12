@@ -32,7 +32,7 @@ body {
   gap: 6rem;
   background-color: #FAFAFA;
   color: #4D4F62;
-  padding: 40px;
+  padding: 4rem;
 }
 
 .header-container {
@@ -47,17 +47,17 @@ body {
 }
 
 .header-tag-line {
-  font: 2.4rem/140% "Poppins ExtraLight";
+  font: 2.4rem/140% "Poppins ExtraLight", sans-serif;
   letter-spacing: 0.25px;
 }
 
 .header-title {
-  font: 2.4rem/140% "Poppins SemiBold";
+  font: 2.4rem/140% "Poppins SemiBold", sans-serif;
   letter-spacing: 0.25px;
 }
 
 .header-desc {
-  font: 1.5rem/140% "Poppins Regular";
+  font: 1.5rem/140% "Poppins Regular", sans-serif;
   letter-spacing: 0.1px;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .card {
   width: clamp(316px, 85%, 400px);
-  height: 250px;
+  min-height: 250px;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5019607843);
   border-radius: 8px;
   padding: 3.2rem;
@@ -108,26 +108,27 @@ body {
 }
 
 .card-title {
-  font: 2rem/135% "Poppins SemiBold";
+  font: 2rem/135% "Poppins SemiBold", sans-serif;
 }
 
 .card-desc {
-  font: 1.3rem/160% "Poppins Regular";
+  font: 1.3rem/160% "Poppins Regular", sans-serif;
   letter-spacing: 0.09px;
 }
 
 @media (min-width: 768px) {
   body {
     gap: 7.4rem;
+    padding: none;
   }
   .header-container {
     width: 540px;
   }
   .header-tag-line {
-    font: 3.6rem/140% "Poppins ExtraLight";
+    font: 3.6rem/140% "Poppins ExtraLight", sans-serif;
   }
   .header-title {
-    font: 3.6rem/140% "Poppins SemiBold";
+    font: 3.6rem/140% "Poppins SemiBold", sans-serif;
   }
   .card-container {
     display: grid;
