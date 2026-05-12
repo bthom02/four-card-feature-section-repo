@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Poppins ExtraLight";
+  src: url("./fonts/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,4 +24,150 @@ body {
   width: 100%;
   min-height: 100dvh;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 0;
+  gap: 6rem;
+  background-color: #FAFAFA;
+  color: #4D4F62;
+  padding: 40px;
+}
+
+.header-container {
+  width: clamp(316px, 85%, 400px);
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header-tag-line {
+  font: 2.4rem/140% "Poppins ExtraLight";
+  letter-spacing: 0.25px;
+}
+
+.header-title {
+  font: 2.4rem/140% "Poppins SemiBold";
+  letter-spacing: 0.25px;
+}
+
+.header-desc {
+  font: 1.5rem/140% "Poppins Regular";
+  letter-spacing: 0.1px;
+}
+
+.card-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.card {
+  width: clamp(316px, 85%, 400px);
+  height: 250px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5019607843);
+  border-radius: 8px;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.card img:nth-last-of-type(1) {
+  margin: auto 0 15px auto;
+}
+
+.supervisor {
+  background: linear-gradient(to bottom, #44D3D2 4px, #FFFFFF 4px);
+}
+
+.team-builder {
+  background: linear-gradient(to bottom, #EA5454 4px, #FFFFFF 4px);
+}
+
+.karma {
+  background: linear-gradient(to bottom, #FCAE4A 4px, #FFFFFF 4px);
+}
+
+.calculator {
+  background: linear-gradient(to bottom, #549EF2 4px, #FFFFFF 4px);
+}
+
+.card-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-title {
+  font: 2rem/135% "Poppins SemiBold";
+}
+
+.card-desc {
+  font: 1.3rem/160% "Poppins Regular";
+  letter-spacing: 0.09px;
+}
+
+@media (min-width: 768px) {
+  body {
+    gap: 7.4rem;
+  }
+  .header-container {
+    width: 540px;
+  }
+  .header-tag-line {
+    font: 3.6rem/140% "Poppins ExtraLight";
+  }
+  .header-title {
+    font: 3.6rem/140% "Poppins SemiBold";
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "top top" "left right" "bottom bottom";
+  }
+  .card {
+    width: 316px;
+  }
+  .team-builder {
+    grid-area: top;
+    margin: 0 auto;
+  }
+  .supervisor {
+    grid-area: left;
+  }
+  .karma {
+    grid-area: right;
+  }
+  .calculator {
+    grid-area: bottom;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left top right" "left bottom right";
+  }
+  .card {
+    width: 350px;
+  }
+  .supervisor {
+    margin: auto 0;
+  }
+  .calculator {
+    grid-area: right;
+    margin: auto 0;
+  }
+  .karma {
+    grid-area: bottom;
+  }
 }/*# sourceMappingURL=style.css.map */
